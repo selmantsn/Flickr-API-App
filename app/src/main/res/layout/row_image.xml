@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="photo"
+            type="com.e.flickrapi.models.Photo" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            itemToImage="@{photo}"
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/black"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+</layout>
